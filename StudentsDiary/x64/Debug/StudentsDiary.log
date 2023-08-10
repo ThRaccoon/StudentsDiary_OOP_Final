@@ -1,0 +1,6 @@
+﻿  Main.cpp
+C:\Users\thrac\source\repos\StudentsDiary\StudentsDiary\Main.cpp(202,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\thrac\source\repos\StudentsDiary\StudentsDiary\Main.cpp(211,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  StudentsDiary.cpp
+  Generating Code...
+  StudentsDiary.vcxproj -> C:\Users\thrac\source\repos\StudentsDiary\x64\Debug\StudentsDiary.exe
