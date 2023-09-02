@@ -139,7 +139,7 @@ int main()
 		case 8:
 		{
 			writeToFile();
-			exit(0);
+			return 0;
 			break;
 		}
 		default:
@@ -154,18 +154,18 @@ int main()
 
 void readFromFile()
 {
+	std::string firstName = "NA";
+	std::string lastName = "NA";
+	int age = 0;
+	int id = 0;
+	std::string subjectName = "NA";
+	float grade = 0;
+	int subjectSize = 0;
+
 	std::ifstream file("file.txt");
 
 	while (!file.eof())
-	{
-		std::string firstName = "NA";
-		std::string lastName = "NA";
-		int age = 0;
-		int id = 0;
-		std::string subjectName = "NA";
-		float grade = 0;
-		int subjectSize = 0;
-
+	{ 
 		file >> firstName >> lastName >> age >> id >> subjectSize;
 		
 		sd.addStudent(Student(firstName, lastName, age, id));
