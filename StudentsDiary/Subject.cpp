@@ -48,6 +48,7 @@ void Subject::print()
 	for(auto grade : m_grades)
 	{
 		std::cout << grade << ", ";
+		std::cout << "---------------------------------------" << std::endl;
 	}
 	std::cout << std::endl;
 }
