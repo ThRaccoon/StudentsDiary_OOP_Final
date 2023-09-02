@@ -92,14 +92,22 @@ void Student::addSubjectGrade(std::string name, float grade)
 
 void Student::print()
 {
-	std::cout << "First name: " << m_firstName << std::endl;
-	std::cout << "Last name: " << m_lastName << std::endl;
-	std::cout << "Age: " << m_age << std::endl;
-	std::cout << "ID: " << m_id << std::endl;
-
-	for (auto subject : m_subjects)
+	if(m_id == 0)
 	{
-		subject.print();
+		return;
+	}
+	else
+	{
+		std::cout << "---------------------------------------" << std::endl;
+		std::cout << "First name: " << m_firstName << std::endl;
+		std::cout << "Last name: " << m_lastName << std::endl;
+		std::cout << "Age: " << m_age << std::endl;
+		std::cout << "ID: " << m_id << std::endl;
+	
+		for (auto subject : m_subjects)
+		{
+			subject.print();
+		}
 	}
 }
 
